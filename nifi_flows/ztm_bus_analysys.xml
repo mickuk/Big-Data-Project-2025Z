@@ -1878,7 +1878,7 @@
                     </entry>
                     <entry>
                         <key>Command Arguments</key>
-                        <value>--master;local[2];/home/vagrant/ztm_buses_analyze.py;--dt;${dt};--hr;${hr}</value>
+                        <value>--master;local[2];/home/vagrant/ztm_buses_analyze.py;--dt;${dt};--hour;${hour};--source_table;${source_table};--stops_path;${stops_path};--output_path;${output_path};--lines;${lines}</value>
                     </entry>
                     <entry>
                         <key>Command Path</key>
@@ -3168,9 +3168,33 @@
                         </value>
                     </entry>
                     <entry>
-                        <key>hr</key>
+                        <key>hour</key>
                         <value>
-                            <name>hr</name>
+                            <name>hour</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>lines</key>
+                        <value>
+                            <name>lines</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>output_path</key>
+                        <value>
+                            <name>output_path</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>source_table</key>
+                        <value>
+                            <name>source_table</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>stops_path</key>
+                        <value>
+                            <name>stops_path</name>
                         </value>
                     </entry>
                 </descriptors>
@@ -3197,8 +3221,24 @@
                         <value>20260110</value>
                     </entry>
                     <entry>
-                        <key>hr</key>
-                        <value>19</value>
+                        <key>hour</key>
+                        <value>09</value>
+                    </entry>
+                    <entry>
+                        <key>lines</key>
+                        <value>119</value>
+                    </entry>
+                    <entry>
+                        <key>output_path</key>
+                        <value>file:///home/vagrant/output</value>
+                    </entry>
+                    <entry>
+                        <key>source_table</key>
+                        <value>ztm_buses_cleaned</value>
+                    </entry>
+                    <entry>
+                        <key>stops_path</key>
+                        <value>file:///home/vagrant/stops.txt</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -4717,5 +4757,5 @@ WHERE CAST("Time" AS BIGINT) &gt;=
             <type>org.apache.nifi.processors.standard.QueryRecord</type>
         </processors>
     </snippet>
-    <timestamp>01/11/2026 14:24:49 UTC</timestamp>
+    <timestamp>01/11/2026 16:43:29 UTC</timestamp>
 </template>
