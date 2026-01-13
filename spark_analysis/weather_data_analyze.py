@@ -106,7 +106,7 @@ def main():
         try:
             import happybase
             
-            conn = happybase.Connection(host="localhost", port=9090, transport="buffered", protocol="compact")
+            conn = happybase.Connection(host="localhost", port=8000, transport="buffered")
             table_name = "weather_analysis"
             column_families = {'cf': dict()}
 
@@ -137,15 +137,15 @@ def main():
                     b.put(rowkey.encode(), hbase_row)
 
             conn.close()
-            print(f"\n Zapisano {len(weather_records)} rekordów do HBase (tabela: {table_name})")
+            print(f"\n Zapisano {len(weather_records)} rekordów do HBase (tabela: {table_name}).")
 
         except ImportError:
             print("\n Moduł happybase nie jest zainstalowany. Pomijam zapis do HBase.")
             print("  Aby zainstalować: pip3 install happybase")
         except Exception as e:
             print(f"\n Błąd podczas zapisu do HBase: {e}")
-            print("  Upewnij się, że HBase Thrift Server działa na porcie 9090")
-            print("  Uruchom: hbase thrift start -p 9090")
+            print("  Upewnij się, że HBase Thrift Server działa na porcie 8000")
+            print("  Uruchom: hbase thrift start -p 8000")
 
     spark.stop()
 
@@ -157,7 +157,7 @@ if __name__ == "__main__":
 # INSTRUKCJE URUCHOMIENIA:
 #
 # 1. Uruchom HBase Thrift Server:
-#    hbase thrift start -p 9090
+#    hbase thrift start -p 8000
 #
 # 2. Uruchom analizę:
 #    spark-submit weather_data_analyze.py --dt 20260113
