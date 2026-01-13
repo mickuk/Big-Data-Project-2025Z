@@ -6,7 +6,7 @@ from pyspark.sql.types import StructType, StructField, LongType, IntegerType, St
 
 def main():
     parser = argparse.ArgumentParser(description="Analiza danych pogodowych")
-    parser.add_argument("--dt", required=True, help="Data YYYYMMDD")
+    parser.add_argument("--dt", required=True, help="Data YYYY-MM-DD")
     parser.add_argument("--source_table", default="weather_data",
                         help="Nazwa tabeli Hive z danymi pogodowymi")
     args = parser.parse_args()
@@ -160,11 +160,11 @@ if __name__ == "__main__":
 #    hbase thrift start -p 8000
 #
 # 2. Uruchom analizę:
-#    spark-submit weather_data_analyze.py --dt 20260113
+#    spark-submit weather_data_analyze.py --dt 2026-01-13
 #
 # 3. Sprawdź dane w HBase:
 #    scan 'weather_analysis', {LIMIT => 10}
-#    get 'weather_analysis', '20260113_Clear'
+#    get 'weather_analysis', '2026-01-13_Clear'
 #
 # Zarządzanie Tabelą HBase:
 #    disable 'weather_analysis'
