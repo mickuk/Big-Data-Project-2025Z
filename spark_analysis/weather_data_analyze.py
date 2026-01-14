@@ -21,7 +21,7 @@ def main():
     # Wczytanie danych z Hive
     query = f"""
         SELECT * FROM {args.source_table}
-        WHERE `date` = '{args.dt}'
+        WHERE dt = '{args.dt}'
     """
 
     weather_df = spark.sql(query)

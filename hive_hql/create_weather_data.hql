@@ -11,6 +11,6 @@ CREATE EXTERNAL TABLE IF NOT EXISTS weather_data (
   rain_1h        DOUBLE,
   snow_1h        DOUBLE
 )
-PARTITIONED BY (`date` STRING)
+PARTITIONED BY (dt STRING)
 STORED AS PARQUET
 LOCATION '/user/bigdata/data/parquet/weather_data';

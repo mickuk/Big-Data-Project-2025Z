@@ -2,7 +2,7 @@
 <template encoding-version="1.3">
     <description></description>
     <groupId>d87730d3-0972-1a39-774a-e2dcbcb0928c</groupId>
-    <name>weather_data</name>
+    <name>openweather_flow</name>
     <snippet>
         <connections>
             <id>03e5953b-1bcd-35ac-0000-000000000000</id>
@@ -1516,9 +1516,9 @@ ${date}</value>
                         </value>
                     </entry>
                     <entry>
-                        <key>date</key>
+                        <key>dt</key>
                         <value>
-                            <name>date</name>
+                            <name>dt</name>
                         </value>
                     </entry>
                 </descriptors>
@@ -1541,7 +1541,7 @@ ${date}</value>
                         <value>100</value>
                     </entry>
                     <entry>
-                        <key>date</key>
+                        <key>dt</key>
                         <value>${event_time:toNumber():multiply(1000):format('yyyy-MM-dd')}</value>
                     </entry>
                 </properties>
@@ -2296,7 +2296,7 @@ ${date}</value>
                     </entry>
                     <entry>
                         <key>Directory</key>
-                        <value>/user/bigdata/data/parquet/weather_data/date=${date}</value>
+                        <value>/user/bigdata/data/parquet/weather_data/dt=${dt}</value>
                     </entry>
                     <entry>
                         <key>Conflict Resolution Strategy</key>
@@ -2505,8 +2505,8 @@ ${date}</value>
                     <entry>
                         <key>Replacement Value</key>
                         <value>ALTER TABLE weather_data
-ADD IF NOT EXISTS PARTITION (`date`='${date}')
-LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
+ADD IF NOT EXISTS PARTITION (dt='${dt}')
+LOCATION '/user/bigdata/data/parquet/weather_data/dt=${dt}';
 </value>
                     </entry>
                     <entry>
@@ -2545,7 +2545,7 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
                 <autoTerminate>false</autoTerminate>
                 <name>success</name>
             </relationships>
-            <state>RUNNING</state>
+            <state>STOPPED</state>
             <style/>
             <type>org.apache.nifi.processors.standard.ReplaceText</type>
         </processors>
@@ -2857,9 +2857,9 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
                         </value>
                     </entry>
                     <entry>
-                        <key>date</key>
+                        <key>dt</key>
                         <value>
-                            <name>date</name>
+                            <name>dt</name>
                         </value>
                     </entry>
                 </descriptors>
@@ -2882,7 +2882,7 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
                         <value>100</value>
                     </entry>
                     <entry>
-                        <key>date</key>
+                        <key>dt</key>
                         <value>${now():format('yyyy-MM-dd')}</value>
                     </entry>
                 </properties>
@@ -2994,7 +2994,7 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
                 <autoTerminate>true</autoTerminate>
                 <name>success</name>
             </relationships>
-            <state>STOPPED</state>
+            <state>RUNNING</state>
             <style/>
             <type>org.apache.nifi.processors.hive.PutHiveQL</type>
         </processors>
@@ -3404,7 +3404,7 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
                     </entry>
                     <entry>
                         <key>correlation-attribute-name</key>
-                        <value>date</value>
+                        <value>dt</value>
                     </entry>
                     <entry>
                         <key>Attribute Strategy</key>
@@ -3588,5 +3588,5 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
             <type>org.apache.nifi.processors.standard.JoltTransformJSON</type>
         </processors>
     </snippet>
-    <timestamp>01/14/2026 12:32:01 UTC</timestamp>
+    <timestamp>01/14/2026 14:32:04 UTC</timestamp>
 </template>
