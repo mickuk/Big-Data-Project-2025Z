@@ -93,11 +93,11 @@ def main():
         print("\n=== BRAK OPADÓW W TYM DNIU ===")
 
     # Przygotowanie danych do zapisu w HBase
-    # Agregacja danych według warunków pogodowych z dodaniem daty
-    weather_stats_with_date = weather_stats.withColumn("dt", F.lit(args.dt))
+    # Agregacja danych godzinnych z dodaniem daty
+    hourly_stats_with_date = hourly_stats.withColumn("dt", F.lit(args.dt))
 
     # Konwersja do listy rekordów
-    weather_records = weather_stats_with_date.collect()
+    weather_records = hourly_stats_with_date.collect()
 
     print(f"\nPrzygotowano {len(weather_records)} rekordów do zapisu w HBase")
 
@@ -119,20 +119,17 @@ def main():
 
             with table.batch(batch_size=1000) as b:
                 for record in weather_records:
-                    # Klucz: data_warunek_pogodowy
-                    rowkey = f"{record['dt']}_{record['weather_main']}"
+                    # Klucz: data_godzina
+                    rowkey = f"{record['dt']}_{record['hour']:02d}"
                     
                     hbase_row = {
                         b"cf:dt": str(record['dt']).encode(),
-                        b"cf:weather_main": str(record['weather_main']).encode(),
+                        b"cf:hour": str(record['hour']).encode(),
                         b"cf:measurement_count": str(record['measurement_count']).encode(),
                         b"cf:avg_temp": str(record['avg_temp']).encode(),
-                        b"cf:avg_feels_like": str(record['avg_feels_like']).encode(),
                         b"cf:avg_humidity": str(record['avg_humidity']).encode(),
-                        b"cf:avg_pressure": str(record['avg_pressure']).encode(),
                         b"cf:avg_wind_speed": str(record['avg_wind_speed']).encode(),
-                        b"cf:min_temp": str(record['min_temp']).encode(),
-                        b"cf:max_temp": str(record['max_temp']).encode(),
+                        b"cf:avg_pressure": str(record['avg_pressure']).encode(),
                     }
                     b.put(rowkey.encode(), hbase_row)
 
