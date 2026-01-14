@@ -2,7 +2,7 @@
 <template encoding-version="1.3">
     <description></description>
     <groupId>d87730d3-0972-1a39-774a-e2dcbcb0928c</groupId>
-    <name>openweather_flow</name>
+    <name>weather_data</name>
     <snippet>
         <connections>
             <id>03e5953b-1bcd-35ac-0000-000000000000</id>
@@ -155,6 +155,56 @@
             <zIndex>0</zIndex>
         </connections>
         <connections>
+            <id>4570f5ca-3f45-3762-0000-000000000000</id>
+            <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>ff8e6053-19b6-355b-0000-000000000000</groupId>
+                <id>3a77c84f-5279-3131-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>ff8e6053-19b6-355b-0000-000000000000</groupId>
+                <id>852ea8c2-5051-371c-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>a9412070-d5a3-3caa-0000-000000000000</id>
+            <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>ff8e6053-19b6-355b-0000-000000000000</groupId>
+                <id>8f2c0fb7-b5fb-3d19-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>ff8e6053-19b6-355b-0000-000000000000</groupId>
+                <id>3a77c84f-5279-3131-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
             <id>cb3f3343-526d-3d80-0000-000000000000</id>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
@@ -200,31 +250,6 @@
             <source>
                 <groupId>ff8e6053-19b6-355b-0000-000000000000</groupId>
                 <id>a921ed43-3128-3636-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
-        <connections>
-            <id>ddba63dc-4504-328c-0000-000000000000</id>
-            <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <destination>
-                <groupId>ff8e6053-19b6-355b-0000-000000000000</groupId>
-                <id>8f2c0fb7-b5fb-3d19-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>1</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>success</selectedRelationships>
-            <source>
-                <groupId>ff8e6053-19b6-355b-0000-000000000000</groupId>
-                <id>852ea8c2-5051-371c-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </source>
             <zIndex>0</zIndex>
@@ -387,7 +412,7 @@
             <properties>
                 <entry>
                     <key>hive-db-connect-url</key>
-                    <value>jdbc:hive2://hiveserver2-host:10000/</value>
+                    <value>jdbc:hive2://localhost:10000/</value>
                 </entry>
                 <entry>
                     <key>hive-config-resources</key>
@@ -1054,8 +1079,8 @@
             <id>020dcdc9-6807-3bca-0000-000000000000</id>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
-                <x>488.0</x>
-                <y>24.0</y>
+                <x>408.0</x>
+                <y>0.0</y>
             </position>
             <bundle>
                 <artifact>nifi-kafka-2-6-nar</artifact>
@@ -1325,8 +1350,8 @@
             <id>043f97a7-41c2-368d-0000-000000000000</id>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
-                <x>2440.0</x>
-                <y>432.0</y>
+                <x>1864.0</x>
+                <y>400.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1453,8 +1478,8 @@ ${date}</value>
             <id>2083a14c-2e5b-3fa3-0000-000000000000</id>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
-                <x>1128.0</x>
-                <y>264.0</y>
+                <x>1016.0</x>
+                <y>192.0</y>
             </position>
             <bundle>
                 <artifact>nifi-update-attribute-nar</artifact>
@@ -1539,8 +1564,8 @@ ${date}</value>
             <id>268ae2b8-6873-3600-0000-000000000000</id>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
-                <x>1112.0</x>
-                <y>32.0</y>
+                <x>1016.0</x>
+                <y>8.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1635,8 +1660,8 @@ ${date}</value>
             <id>292da6e2-dc37-30af-0000-000000000000</id>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
-                <x>2424.0</x>
-                <y>0.0</y>
+                <x>1864.0</x>
+                <y>24.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1742,7 +1767,7 @@ ${date}</value>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
                 <x>8.0</x>
-                <y>16.0</y>
+                <y>0.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -2125,8 +2150,8 @@ ${date}</value>
             <id>36b063a2-8cc6-3e33-0000-000000000000</id>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
-                <x>768.0</x>
-                <y>792.0</y>
+                <x>1008.0</x>
+                <y>528.0</y>
             </position>
             <bundle>
                 <artifact>nifi-hadoop-nar</artifact>
@@ -2327,7 +2352,7 @@ ${date}</value>
             <id>37055a24-75ea-3e87-0000-000000000000</id>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
-                <x>2432.0</x>
+                <x>1864.0</x>
                 <y>208.0</y>
             </position>
             <bundle>
@@ -2391,7 +2416,7 @@ ${date}</value>
                     </entry>
                     <entry>
                         <key>date</key>
-                        <value>${now():minus(1, 'DAYS'):format('yyyy-MM-dd')}</value>
+                        <value>${now():format('yyyy-MM-dd')}</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -2410,11 +2435,126 @@ ${date}</value>
             <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
         </processors>
         <processors>
+            <id>3a77c84f-5279-3131-0000-000000000000</id>
+            <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
+            <position>
+                <x>1440.0</x>
+                <y>408.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.14.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Regular Expression</key>
+                        <value>
+                            <name>Regular Expression</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Replacement Value</key>
+                        <value>
+                            <name>Replacement Value</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Character Set</key>
+                        <value>
+                            <name>Character Set</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Maximum Buffer Size</key>
+                        <value>
+                            <name>Maximum Buffer Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Replacement Strategy</key>
+                        <value>
+                            <name>Replacement Strategy</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Evaluation Mode</key>
+                        <value>
+                            <name>Evaluation Mode</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Line-by-Line Evaluation Mode</key>
+                        <value>
+                            <name>Line-by-Line Evaluation Mode</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Regular Expression</key>
+                        <value>(?s)(^.*$)</value>
+                    </entry>
+                    <entry>
+                        <key>Replacement Value</key>
+                        <value>ALTER TABLE weather_data
+ADD IF NOT EXISTS PARTITION (`date`='${date}')
+LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
+</value>
+                    </entry>
+                    <entry>
+                        <key>Character Set</key>
+                        <value>UTF-8</value>
+                    </entry>
+                    <entry>
+                        <key>Maximum Buffer Size</key>
+                        <value>1 MB</value>
+                    </entry>
+                    <entry>
+                        <key>Replacement Strategy</key>
+                        <value>Always Replace</value>
+                    </entry>
+                    <entry>
+                        <key>Evaluation Mode</key>
+                        <value>Entire text</value>
+                    </entry>
+                    <entry>
+                        <key>Line-by-Line Evaluation Mode</key>
+                        <value>All</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>ReplaceText</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>RUNNING</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.ReplaceText</type>
+        </processors>
+        <processors>
             <id>41aa2d9d-9e80-3b78-0000-000000000000</id>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
-                <x>1816.425365462673</x>
-                <y>25.586030561202165</y>
+                <x>1424.0</x>
+                <y>24.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -2491,10 +2631,6 @@ ${date}</value>
                     </entry>
                     <entry>
                         <key>generate-ff-custom-text</key>
-                        <value>ALTER TABLE weather_data
-ADD IF NOT EXISTS PARTITION (`date`='${date}')
-LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
-</value>
                     </entry>
                     <entry>
                         <key>character-set</key>
@@ -2505,8 +2641,8 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
-                <schedulingPeriod>0 0 12 * * ?</schedulingPeriod>
-                <schedulingStrategy>CRON_DRIVEN</schedulingStrategy>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
                 <yieldDuration>1 sec</yieldDuration>
             </config>
             <executionNodeRestricted>false</executionNodeRestricted>
@@ -2523,8 +2659,8 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
             <id>532a3846-7e45-38bf-0000-000000000000</id>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
-                <x>1064.0</x>
-                <y>520.0</y>
+                <x>1008.0</x>
+                <y>336.0</y>
             </position>
             <bundle>
                 <artifact>nifi-update-attribute-nar</artifact>
@@ -2609,8 +2745,8 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
             <id>5d4a79e8-5e75-3031-0000-000000000000</id>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
-                <x>480.0</x>
-                <y>520.0</y>
+                <x>408.0</x>
+                <y>344.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -2683,8 +2819,8 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
             <id>852ea8c2-5051-371c-0000-000000000000</id>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
-                <x>1816.0</x>
-                <y>272.0</y>
+                <x>1432.0</x>
+                <y>216.0</y>
             </position>
             <bundle>
                 <artifact>nifi-update-attribute-nar</artifact>
@@ -2761,7 +2897,7 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
                 <autoTerminate>false</autoTerminate>
                 <name>success</name>
             </relationships>
-            <state>STOPPED</state>
+            <state>RUNNING</state>
             <style/>
             <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
         </processors>
@@ -2769,8 +2905,8 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
             <id>8f2c0fb7-b5fb-3d19-0000-000000000000</id>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
-                <x>1808.0</x>
-                <y>512.0</y>
+                <x>1432.0</x>
+                <y>600.0</y>
             </position>
             <bundle>
                 <artifact>nifi-hive-nar</artifact>
@@ -2867,7 +3003,7 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
                 <x>0.0</x>
-                <y>512.0</y>
+                <y>368.0</y>
             </position>
             <bundle>
                 <artifact>nifi-kafka-2-6-nar</artifact>
@@ -3168,8 +3304,8 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
             <id>a921ed43-3128-3636-0000-000000000000</id>
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
-                <x>488.0</x>
-                <y>272.0</y>
+                <x>408.0</x>
+                <y>152.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -3284,14 +3420,14 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
                     </entry>
                     <entry>
                         <key>min-bin-size</key>
-                        <value>0 B</value>
+                        <value>100 KB</value>
                     </entry>
                     <entry>
                         <key>max-bin-size</key>
                     </entry>
                     <entry>
                         <key>max-bin-age</key>
-                        <value>15 min</value>
+                        <value>1 min</value>
                     </entry>
                     <entry>
                         <key>max.bin.count</key>
@@ -3326,7 +3462,7 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
             <parentGroupId>ff8e6053-19b6-355b-0000-000000000000</parentGroupId>
             <position>
                 <x>0.0</x>
-                <y>256.0</y>
+                <y>184.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -3452,5 +3588,5 @@ LOCATION '/user/bigdata/data/parquet/weather_data/date=${date}';
             <type>org.apache.nifi.processors.standard.JoltTransformJSON</type>
         </processors>
     </snippet>
-    <timestamp>01/13/2026 22:26:54 UTC</timestamp>
+    <timestamp>01/14/2026 12:32:01 UTC</timestamp>
 </template>
