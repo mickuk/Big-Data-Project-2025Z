@@ -79,7 +79,7 @@ def calculate_time_diff_minutes(measurement_time_str: str, timetable: tuple) -> 
 
         try:
             parts = time_str.split(':')
-            hour = int(parts[0]) % 24  # 24 -> 0
+            hour = int(parts[0]) % 24
             time_str_fixed = f"{hour:02d}:{parts[1]}:{parts[2]}"
 
             scheduled = datetime.strptime(time_str_fixed, '%H:%M:%S')
@@ -188,10 +188,8 @@ def main():
 
     print(f"Załadowano {bus_df.count()} pomiarów autobusów")
 
-    # CROSS JOIN z przystankami (broadcast)
     bus_with_stops = bus_df.crossJoin(stops_broadcast)
 
-    # Haversine
     bus_with_stops = bus_with_stops.withColumn(
         "lat1_rad", F.radians(F.col("lat"))
     ).withColumn(
@@ -293,7 +291,6 @@ def main():
 
     print(f"Obliczono TimeDiff dla {len(results)} pomiarów")
 
-    # Średni TimeDiff dla każdej linii
     line_avg = {}
     for row in results:
         line = row['line']
@@ -329,11 +326,10 @@ def main():
         print(f"   Liczba pomiarów: {line_data['measurement_count']}")
         print(f"   Suma odchyleń: {line_data['total_time_diff']} min\n")
 
-    # Zapis do HBase
     if line_summaries:
         import happybase
         conn = happybase.Connection(host="localhost", port=8000, transport="buffered")
-        table_name = "ztm_line_avg_delays"  # zostawiam nazwę, ale treść to TimeDiff
+        table_name = "ztm_line_avg_delays"
         column_families = {'cf': dict()}
 
         if table_name.encode() not in conn.tables():
