@@ -2,7 +2,7 @@
 <template encoding-version="1.3">
     <description></description>
     <groupId>0927ddff-017c-1000-3f08-95a84646cb8e</groupId>
-    <name>ztm_bus_analysys</name>
+    <name>ztm_buses</name>
     <snippet>
         <connections>
             <id>29a1e500-343e-3d6b-0000-000000000000</id>
@@ -1282,10 +1282,10 @@
             <id>046c60c5-ab39-32b7-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>0.0</x>
-                <y>24.0</y>
+                <x>2624.0</x>
+                <y>16.0</y>
             </position>
-            <height>464.0</height>
+            <height>512.0</height>
             <label>Create ztm_buses_raw Hive tables</label>
             <style>
                 <entry>
@@ -1296,13 +1296,132 @@
             <width>384.0</width>
         </labels>
         <labels>
+            <id>0b62bf11-0d33-39ce-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>384.0</x>
+                <y>896.0</y>
+            </position>
+            <height>40.0</height>
+            <label>5</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>0c21acc6-50cc-3ef7-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>448.0</x>
+                <y>72.0</y>
+            </position>
+            <height>40.0</height>
+            <label>1</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>32f836bb-eb6e-31bf-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>1808.0</x>
+                <y>208.0</y>
+            </position>
+            <height>40.0</height>
+            <label>16</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>372156a1-d444-33db-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>1792.0</x>
+                <y>960.0</y>
+            </position>
+            <height>40.0</height>
+            <label>19</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>383b4fb9-aa9c-3fbd-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>1144.0</x>
+                <y>232.0</y>
+            </position>
+            <height>40.0</height>
+            <label>10</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>4a4db1b1-fe3b-384a-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>2632.0</x>
+                <y>464.0</y>
+            </position>
+            <height>40.0</height>
+            <label>25</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>57e906c0-55ff-3141-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>1792.0</x>
+                <y>704.0</y>
+            </position>
+            <height>40.0</height>
+            <label>18</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
             <id>5ae72dd2-1bbd-350e-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1160.0</x>
-                <y>0.0</y>
+                <x>736.0</x>
+                <y>16.0</y>
             </position>
-            <height>2200.0</height>
+            <height>1088.0</height>
             <label>ZTM bus positions Kafka to Hive Parquet partitioned by day and hour</label>
             <style>
                 <entry>
@@ -1310,16 +1429,118 @@
                     <value>18px</value>
                 </entry>
             </style>
-            <width>584.0</width>
+            <width>1024.0</width>
+        </labels>
+        <labels>
+            <id>636b679d-00cf-3bc1-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>2632.0</x>
+                <y>208.0</y>
+            </position>
+            <height>40.0</height>
+            <label>24</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>6d5ea148-fdc1-374a-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>1136.0</x>
+                <y>832.0</y>
+            </position>
+            <height>40.0</height>
+            <label>15</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>7f289354-7239-3424-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>400.0</x>
+                <y>496.0</y>
+            </position>
+            <height>40.0</height>
+            <label>3</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>880265b4-917a-3796-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>1312.0</x>
+                <y>224.0</y>
+            </position>
+            <height>40.0</height>
+            <label>9</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>90125f9c-5f5f-3122-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>2200.0</x>
+                <y>488.0</y>
+            </position>
+            <height>40.0</height>
+            <label>21</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>93bf2325-e7b1-3d7e-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>280.0</x>
+                <y>704.0</y>
+            </position>
+            <height>40.0</height>
+            <label>4</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
         </labels>
         <labels>
             <id>983a0cb6-5977-3fe8-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>504.0</x>
-                <y>16.0</y>
+                <x>0.0</x>
+                <y>0.0</y>
             </position>
-            <height>1464.0</height>
+            <height>1184.0</height>
             <label>ZTM bus positions API to Kafka</label>
             <style>
                 <entry>
@@ -1327,16 +1548,101 @@
                     <value>18px</value>
                 </entry>
             </style>
-            <width>488.0</width>
+            <width>736.0</width>
+        </labels>
+        <labels>
+            <id>a36b7fde-c087-3c56-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>1128.0</x>
+                <y>152.0</y>
+            </position>
+            <height>40.0</height>
+            <label>7</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>a68a9be4-a26c-345a-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>2208.0</x>
+                <y>232.0</y>
+            </position>
+            <height>40.0</height>
+            <label>20</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>b29f976d-9478-3895-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>296.0</x>
+                <y>304.0</y>
+            </position>
+            <height>40.0</height>
+            <label>2</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>b91c0905-da54-325c-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>1136.0</x>
+                <y>416.0</y>
+            </position>
+            <height>40.0</height>
+            <label>11</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>b9e4aa85-a395-36a2-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>1304.0</x>
+                <y>608.0</y>
+            </position>
+            <height>40.0</height>
+            <label>13</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
         </labels>
         <labels>
             <id>c041a833-23b7-3503-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1880.0</x>
-                <y>24.0</y>
+                <x>1776.0</x>
+                <y>16.0</y>
             </position>
-            <height>952.0</height>
+            <height>992.0</height>
             <label>ZTM bus positions raw to cleaned</label>
             <style>
                 <entry>
@@ -1344,16 +1650,101 @@
                     <value>18px</value>
                 </entry>
             </style>
-            <width>432.0</width>
+            <width>408.0</width>
+        </labels>
+        <labels>
+            <id>e4a86588-beb2-38c0-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>1136.0</x>
+                <y>608.0</y>
+            </position>
+            <height>40.0</height>
+            <label>14</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>e58c465e-bcb1-3eb3-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>2200.0</x>
+                <y>968.0</y>
+            </position>
+            <height>40.0</height>
+            <label>23</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>e6c09a6f-defb-3ed5-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>1304.0</x>
+                <y>424.0</y>
+            </position>
+            <height>40.0</height>
+            <label>12</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>e902ba5e-c79a-3109-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>304.0</x>
+                <y>1088.0</y>
+            </position>
+            <height>40.0</height>
+            <label>6</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>f18d04dd-65dc-3323-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>1800.0</x>
+                <y>472.0</y>
+            </position>
+            <height>40.0</height>
+            <label>17</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
         </labels>
         <labels>
             <id>f5f14a3d-14d7-34ae-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>2416.0</x>
+                <x>2192.0</x>
                 <y>16.0</y>
             </position>
-            <height>960.0</height>
+            <height>1000.0</height>
             <label>ZTM bus positions cleaned analysis (save to HBase)</label>
             <style>
                 <entry>
@@ -1363,12 +1754,46 @@
             </style>
             <width>432.0</width>
         </labels>
+        <labels>
+            <id>f65857f2-a0e8-33c4-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>2200.0</x>
+                <y>728.0</y>
+            </position>
+            <height>40.0</height>
+            <label>22</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
+        <labels>
+            <id>f7bbcbc9-06c1-3de0-0000-000000000000</id>
+            <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
+            <position>
+                <x>1304.0</x>
+                <y>152.0</y>
+            </position>
+            <height>40.0</height>
+            <label>8</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>24px</value>
+                </entry>
+            </style>
+            <width>64.0</width>
+        </labels>
         <processors>
             <id>0d6044fb-310d-3edd-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>16.0</x>
-                <y>328.0</y>
+                <x>2640.0</x>
+                <y>320.0</y>
             </position>
             <bundle>
                 <artifact>nifi-hive-nar</artifact>
@@ -1464,8 +1889,8 @@
             <id>114cd986-2184-3196-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1920.0</x>
-                <y>72.0</y>
+                <x>1816.0</x>
+                <y>64.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1570,8 +1995,8 @@
             <id>20e4a8ca-dec7-36a5-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1192.0</x>
-                <y>568.0</y>
+                <x>1392.0</x>
+                <y>248.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1648,8 +2073,8 @@
             <id>214a595c-3973-37ad-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1192.0</x>
-                <y>816.0</y>
+                <x>776.0</x>
+                <y>240.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1772,7 +2197,7 @@
                     </entry>
                     <entry>
                         <key>max-bin-age</key>
-                        <value>60 min</value>
+                        <value>1 min</value>
                     </entry>
                     <entry>
                         <key>max.bin.count</key>
@@ -1806,7 +2231,7 @@
             <id>2f9bb61a-cc9b-3b42-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>2464.0</x>
+                <x>2240.0</x>
                 <y>576.0</y>
             </position>
             <bundle>
@@ -1924,8 +2349,8 @@
             <id>2fec47d2-213f-377e-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1192.0</x>
-                <y>2016.0</y>
+                <x>768.0</x>
+                <y>816.0</y>
             </position>
             <bundle>
                 <artifact>nifi-hive-nar</artifact>
@@ -2021,8 +2446,8 @@
             <id>3c4e77f4-38c1-3529-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>576.0</x>
-                <y>320.0</y>
+                <x>376.0</x>
+                <y>264.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -2089,7 +2514,7 @@
                 <autoTerminate>true</autoTerminate>
                 <name>unmatched</name>
             </relationships>
-            <state>STOPPED</state>
+            <state>RUNNING</state>
             <style/>
             <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
         </processors>
@@ -2097,8 +2522,8 @@
             <id>5bf174bb-d9be-3c2b-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1192.0</x>
-                <y>64.0</y>
+                <x>760.0</x>
+                <y>48.0</y>
             </position>
             <bundle>
                 <artifact>nifi-kafka-2-6-nar</artifact>
@@ -2385,8 +2810,8 @@
             <id>63e03a19-6efc-3746-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>576.0</x>
-                <y>1320.0</y>
+                <x>376.0</x>
+                <y>1048.0</y>
             </position>
             <bundle>
                 <artifact>nifi-kafka-2-6-nar</artifact>
@@ -2682,7 +3107,7 @@
                 <autoTerminate>true</autoTerminate>
                 <name>success</name>
             </relationships>
-            <state>STOPPED</state>
+            <state>RUNNING</state>
             <style/>
             <type>org.apache.nifi.processors.kafka.pubsub.PublishKafkaRecord_2_6</type>
         </processors>
@@ -2690,8 +3115,8 @@
             <id>65a72ef2-5ee2-3a2c-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1920.0</x>
-                <y>824.0</y>
+                <x>1816.0</x>
+                <y>816.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -2804,8 +3229,8 @@
             <id>6b745d15-7b7d-3b1c-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1192.0</x>
-                <y>1536.0</y>
+                <x>1384.0</x>
+                <y>616.0</y>
             </position>
             <bundle>
                 <artifact>nifi-hadoop-nar</artifact>
@@ -3006,8 +3431,8 @@
             <id>7bf5849a-1137-3d75-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1920.0</x>
-                <y>568.0</y>
+                <x>1816.0</x>
+                <y>560.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -3124,7 +3549,7 @@
             <id>7f5ce29e-9721-3127-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>2464.0</x>
+                <x>2240.0</x>
                 <y>344.0</y>
             </position>
             <bundle>
@@ -3222,7 +3647,7 @@
                     </entry>
                     <entry>
                         <key>hour</key>
-                        <value>09</value>
+                        <value>18</value>
                     </entry>
                     <entry>
                         <key>lines</key>
@@ -3260,8 +3685,8 @@
             <id>89b1791c-c392-30ff-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1920.0</x>
-                <y>336.0</y>
+                <x>1816.0</x>
+                <y>328.0</y>
             </position>
             <bundle>
                 <artifact>nifi-update-attribute-nar</artifact>
@@ -3324,7 +3749,7 @@
                     </entry>
                     <entry>
                         <key>dt</key>
-                        <value>20260110</value>
+                        <value>20260114</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -3346,7 +3771,7 @@
             <id>8f69785c-736e-3649-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>2464.0</x>
+                <x>2240.0</x>
                 <y>832.0</y>
             </position>
             <bundle>
@@ -3460,8 +3885,8 @@
             <id>98c92d63-dec1-3baa-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1192.0</x>
-                <y>1776.0</y>
+                <x>768.0</x>
+                <y>616.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -3575,8 +4000,8 @@ LOCATION '/user/bigdata/data/parquet/ztm_buses_raw/${partition_path}';</value>
             <id>a8293bfd-613a-32d0-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1192.0</x>
-                <y>328.0</y>
+                <x>1384.0</x>
+                <y>56.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -3669,8 +4094,8 @@ LOCATION '/user/bigdata/data/parquet/ztm_buses_raw/${partition_path}';</value>
             <id>a9fbaf03-93be-3966-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>576.0</x>
-                <y>560.0</y>
+                <x>24.0</x>
+                <y>464.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -3757,7 +4182,7 @@ LOCATION '/user/bigdata/data/parquet/ztm_buses_raw/${partition_path}';</value>
                 <autoTerminate>true</autoTerminate>
                 <name>unmatched</name>
             </relationships>
-            <state>STOPPED</state>
+            <state>RUNNING</state>
             <style/>
             <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
         </processors>
@@ -3765,8 +4190,8 @@ LOCATION '/user/bigdata/data/parquet/ztm_buses_raw/${partition_path}';</value>
             <id>ae9adf21-4039-3fe9-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1192.0</x>
-                <y>1072.0</y>
+                <x>776.0</x>
+                <y>440.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -3839,8 +4264,8 @@ LOCATION '/user/bigdata/data/parquet/ztm_buses_raw/${partition_path}';</value>
             <id>d4b14f78-d6c3-3ee7-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>16.0</x>
-                <y>80.0</y>
+                <x>2640.0</x>
+                <y>72.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -3957,8 +4382,8 @@ LOCATION '/user/bigdata/data/parquet/ztm_buses_raw';</value>
             <id>d6ce9d8f-9954-36ef-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>576.0</x>
-                <y>64.0</y>
+                <x>80.0</x>
+                <y>56.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -4333,7 +4758,7 @@ LOCATION '/user/bigdata/data/parquet/ztm_buses_raw';</value>
                 <autoTerminate>true</autoTerminate>
                 <name>Retry</name>
             </relationships>
-            <state>STOPPED</state>
+            <state>RUNNING</state>
             <style/>
             <type>org.apache.nifi.processors.standard.InvokeHTTP</type>
         </processors>
@@ -4341,7 +4766,7 @@ LOCATION '/user/bigdata/data/parquet/ztm_buses_raw';</value>
             <id>e755469c-8379-3fc4-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>2464.0</x>
+                <x>2240.0</x>
                 <y>80.0</y>
             </position>
             <bundle>
@@ -4447,8 +4872,8 @@ LOCATION '/user/bigdata/data/parquet/ztm_buses_raw';</value>
             <id>f3f0e4b7-dbfa-32dc-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>1192.0</x>
-                <y>1296.0</y>
+                <x>1384.0</x>
+                <y>424.0</y>
             </position>
             <bundle>
                 <artifact>nifi-update-attribute-nar</artifact>
@@ -4543,8 +4968,8 @@ LOCATION '/user/bigdata/data/parquet/ztm_buses_raw';</value>
             <id>fa086261-66a6-3bf7-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>576.0</x>
-                <y>816.0</y>
+                <x>360.0</x>
+                <y>664.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -4629,7 +5054,7 @@ LOCATION '/user/bigdata/data/parquet/ztm_buses_raw';</value>
                 <autoTerminate>false</autoTerminate>
                 <name>success</name>
             </relationships>
-            <state>STOPPED</state>
+            <state>RUNNING</state>
             <style/>
             <type>org.apache.nifi.processors.standard.UpdateRecord</type>
         </processors>
@@ -4637,8 +5062,8 @@ LOCATION '/user/bigdata/data/parquet/ztm_buses_raw';</value>
             <id>ff3e6a30-07a8-38fd-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>576.0</x>
-                <y>1064.0</y>
+                <x>8.0</x>
+                <y>864.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -4752,10 +5177,10 @@ WHERE CAST("Time" AS BIGINT) &gt;=
                 <autoTerminate>false</autoTerminate>
                 <name>query</name>
             </relationships>
-            <state>STOPPED</state>
+            <state>RUNNING</state>
             <style/>
             <type>org.apache.nifi.processors.standard.QueryRecord</type>
         </processors>
     </snippet>
-    <timestamp>01/11/2026 16:43:29 UTC</timestamp>
+    <timestamp>01/20/2026 12:23:29 UTC</timestamp>
 </template>
